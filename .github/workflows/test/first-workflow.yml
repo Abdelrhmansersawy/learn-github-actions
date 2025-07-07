@@ -1,0 +1,19 @@
+name: First Workflow
+
+# Event Trigger - When this workflow should start?
+on:
+  push:
+    branches:
+      - main
+
+# Jobs - Once triggered, the workflow runs one or more **Jobs**.
+jobs:
+  first-job:
+    runs-on: ubuntu-latest
+
+    # steps - Each job is made up of a sequence of individual Steps.
+    # These are the smallest building blocks, representing single commands or actions.
+    steps:
+      - name: Print Hello World
+        run: echo  "Hello World!"
+        
