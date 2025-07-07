@@ -16,3 +16,9 @@ jobs:
     steps:
       - name: Print Hello World
         run: echo "Hello World!"
+
+      - name: Checkout Repository
+        uses: actions/checkout@v4.2.2
+
+      - name: List repoistory files
+        run: ls -la
