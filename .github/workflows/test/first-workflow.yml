@@ -15,5 +15,4 @@ jobs:
     # These are the smallest building blocks, representing single commands or actions.
     steps:
       - name: Print Hello World
-        run: echo  "Hello World!"
-        
+        run: echo "Hello World!"
